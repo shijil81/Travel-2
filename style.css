@@ -1,0 +1,571 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* header-navbar-about */
+.header{
+    background: url(./Img/about.jpg);
+    background-size: cover;
+    background-position-x: center;
+    /* background-attachment: fixed; */
+}
+@media (max-width: 1240px) {
+    .header {
+        background-attachment: fixed;
+    }
+}
+
+/* navbar */
+.nav-drp{
+    background:linear-gradient(to right,rgb(45, 242, 45),rgb(99, 99, 252));
+    font-weight: 600;
+    font-style: oblique;
+    border-radius:30px;
+}
+
+/* modal */
+.first-modal{
+    background-image: url(./Img/way2.jpg);
+    background-size: cover;
+    background-position-x: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+}
+.log-main{
+    height: 550px;
+}
+
+#chk{
+    display: none;
+}
+
+.login{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.log-heading{
+    color: #fff;
+    font-size: 2.3em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.signup{
+    width: 425px;
+    height: 580px;
+    background-image: url(./Img/login.jpg);
+    background-size: cover;
+    background-position-x: center;
+    border-radius: 60% / 20%;
+    transform: translateY(-90px);
+    transition: .8s ease-in-out;
+}
+
+.sig-heading{
+    transform: scale(.6);
+}
+
+#chk:checked ~ .signup{
+    transform: translateY(-460px);
+}
+#chk:checked ~ .sig-heading{
+    transform: scale(.8);
+}
+#chk:checked ~ .login label{
+    transform: scale(.6);
+}
+
+/* about */
+
+.aboutus{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 30px; 
+    text-shadow: 1px 1px 2px rgb(15, 15, 15), -1px -1px 2px rgb(46, 0, 0);
+}
+
+.welcome{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgb(15, 15, 15), -1px -1px 2px rgb(46, 0, 0);
+}
+
+.welcome-p{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #0d0d0d;
+    text-shadow: 1px 1px 2px rgb(253, 252, 252), -1px -1px 2px rgb(48, 48, 48);
+    
+}
+
+.customize{
+    height: auto;
+    width: auto;
+    background: rgba(255,255,255,0.5);
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: 5px 10px 10px black;
+    padding: 20px;
+}
+.customize button{
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-size: larger;
+    font-weight: 600;
+    font-style: oblique;
+    background-color: rgb(41, 84, 241);
+    color: white;
+}
+
+.customize button:hover{
+    background-color: green;
+}
+
+.second-modal{
+    background-image: url(./Img/custome.jpg);
+    background-size: cover;
+    background-position-x: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+}
+
+.second-modal h2{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: white;
+    font-weight: 700;
+}
+
+.second-modal label{
+    font-weight: 700;
+    font-size: medium;
+    color: #fff;
+}
+.second-modal input,.second-modal select,.second-modal textarea{
+    background: rgba(255,255,255,0.5);
+}
+
+/* stickyButton */
+.floating-btn-container{
+    position: fixed;
+    bottom: 300px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.floating-btn{
+    width: 45px;
+    height: 45px;
+    background-color: green;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.floating-btn:hover{
+    background-color: rgb(249, 36, 36);
+}
+.floating-btn i{
+    font-size: 24px;
+}
+.floating-btn-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 70px; /*Position the menu above the "+" button*/
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s,visibility 0.3s;
+}
+.floating-btn-container:hover .floating-btn-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.floating-btn-menu button{
+    text-decoration: none;
+    color: rgb(6, 166, 6);
+    display: flex;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+}
+.floating-btn-menu button i{
+    font-size: 30px;
+}
+/* companyInfo */
+.companyInfo h1{
+    font-family: "Caveat", cursive;
+    font-size:60px;
+    font-weight: 900;
+    color: rgb(232, 110, 110);
+}
+
+.companyInfo .info{
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+    font-weight: 600;
+    color: #3d3d3d;
+}
+
+.companyInfo h4{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(232, 110, 110);
+}
+
+.companyInfo .info-details{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color: #3d3d3d;
+    font-size: 15px;
+}
+
+/* trekking */
+
+.trek-head{
+    font-family: "Caveat", cursive;
+    font-size:60px;
+    font-weight: 900;
+    color: rgb(232, 110, 110);
+}
+
+.trek h1{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(232, 110, 110);
+}
+.trek p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color: #3d3d3d;
+    font-size: 15px;
+}
+.trek h4{
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 600;
+}
+
+/* service */
+
+.service{
+    background-image: url(./Img/view1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    height: 420px
+}
+@media (max-width: 1325px) {
+    .service {
+        display: none;
+    }
+}
+.service h1{
+    font-family: "Caveat", cursive;
+    font-size:60px;
+    font-weight: 900;
+    color: rgb(240, 40, 5);
+    text-shadow: 1px 1px 2px rgb(15, 15, 15), -1px -1px 2px rgb(48, 48, 48);
+}
+.service h3{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(251, 10, 10);
+    text-shadow: 1px 1px 2px rgb(15, 15, 15), -1px -1px 2px rgb(48, 48, 48);
+}
+.service .ser{
+    background: rgba(255, 255, 255, 0.7);
+}
+.service .ser h4{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(240, 40, 5);
+    
+}
+.service .ser p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color: #3d3d3d;
+    font-size: 15px;
+}
+
+
+/* destination */
+
+.destination h1{
+    font-family: "Caveat", cursive;
+    font-size: 55px;
+    font-weight: 900;
+    color: rgb(232, 110, 110);
+}
+.destination h4{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(251, 10, 10);
+    
+}
+.destination p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color: #090909;
+    font-size: 15px;
+}
+
+.destination img{
+    transition: 0.5s;
+}
+.destination a:hover img{
+    transform: scale(1.1);
+}
+
+/* Package */
+
+.package-item{
+    border: 2px solid black;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    background: linear-gradient(#f7fafa,#dcedf6c7);
+}
+.package h1{
+    font-family: "Caveat", cursive;
+    font-size: 55px;
+    font-weight: 900;
+    color: rgb(232, 110, 110);
+}
+.package h4{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(251, 10, 10);
+}
+.package h6{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    
+}
+.package p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color: #070707;
+    font-size: 15px;
+}
+.package small{
+    font-size: 20px;
+}
+
+.package-item img{
+    padding: 12px;
+    transition: 0.5s;
+}
+.package-item:hover img{
+    transform: scale(1.1);
+}
+.package.btn{
+    font-family: 'Nuito',sans-serif;
+    font-weight: 600;
+}
+
+/* review */
+
+.review h1{
+    font-family: "Caveat", cursive;
+    font-size: 55px;
+    font-weight: 900;
+    color: rgb(232, 110, 110);
+}
+.review h4{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(251, 10, 10);
+}
+ 
+.review .review-box{
+    width: 95%;
+    margin: 70px auto;
+
+}
+.review .review-box .review-card{
+    width: 330px;
+    height: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    padding: 8px 20px;
+    background: linear-gradient(#f0f3f8c7, #d5fcf6)
+
+}
+.review .review-box .review-card .review-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+.review .review-box .review-card:hover .review-profile{
+    transform: translateY(-60px);
+}
+.review .review-box .review-card .review-profile img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid wheat;
+}
+.review .review-box .review-card .review-text{
+    text-align: center;
+
+}
+.review .review-box .review-card .review-text .name{
+    font-weight: 700;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(237, 11, 11);
+    transition: 0.3s;
+}
+.review .review-box .review-card:hover .review-text .name{
+    transform: translateY(-50px);
+}
+.review .review-box .review-card .review-text .review-icon{
+    color: #ed081b;
+    transition: 0.3s;
+}
+.review .review-box .review-card:hover .review-text .review-icon{
+    transform: translateY(-30px);
+}
+.review .review-box .review-card .review-text p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    color: #070707;
+    font-size: 20px;
+    justify-content: center;
+}
+.review .review-box .review-card .review-text .review-social i{
+    color: #71040d;
+    margin: 5px 1px;
+    font-size: 15px;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.review .review-box .review-card:hover .review-text .review-social i{
+    opacity: 1;
+    transform: translateY(-8px);
+}
+.review .review-box .review-card .review-text p{
+    text-align: center;
+    line-height: 22px;
+    transition: 0.3s;
+}
+.review .review-box .review-card:hover .review-text p{
+    margin-top: 5px;
+    
+}
+
+/* footer */
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+}
+
+footer .social_icon li,
+footer .menu li {
+  position: relative;
+  text-decoration: none;
+  list-style: none;
+}
+
+footer .social_icon li a
+{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+}
+footer .menu li a{
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: .7;
+}
+footer .menu li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+footer .wave{
+    position: absolute;
+    top: -90px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:url(./Img/wave.png);
+    background-size: 1000px 100px;
+}
+#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+}
+#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave{
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}

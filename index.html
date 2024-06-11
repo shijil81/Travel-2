@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wayfind</title>
+  <!-- css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="header">
+    <!-- navbar -->
+    <section class="n-bar">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background: rgba(255,255,255,0.7);">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="./Img/logo.png" alt="" height="50px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item dropdown">
+                <a class="nav-drp nav-link dropdown-toggle fw-bolder" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Best of Season
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Maldives <span class="badge bg-primary">HONEYMOON</span></a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Bali <span class="badge bg-success">TRENDING</span></a></li>
+                  <li><a class="dropdown-item" href="#">Thailand <span class="badge bg-danger">BUDGET</span></a></li>
+                  <li><a class="dropdown-item" href="#">Europe <span class="badge bg-warning">IN SEASON</span></a></li>
+                  <li><a class="dropdown-item" href="#">Dubai</a></li>
+                  <li><a class="dropdown-item" href="#">Vietnam</a></li>
+                  <li><a class="dropdown-item" href="#">Singapore <span class="badge bg-info">POPULAR</span></a></li>
+                </ul>
+
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-bolder" href="#" id="navbarDropdown2" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Explore Destinations
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <li><a class="dropdown-item" href="#">UK Packages</a></li>
+                  <li><a class="dropdown-item" href="#"> France Packages</a></li>
+                  <li><a class="dropdown-item" href="#">Switzerland Packages</a></li>
+                  <li><a class="dropdown-item" href="#">Italy Packages</a></li>
+                  <li><a class="dropdown-item" href="#">Spain Packages</a></li>
+                  <li><a class="dropdown-item" href="#">Abu Dhabi Packages</a></li>
+                </ul>
+
+              </li>
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fw-bolder" href="#" id="navbarDropdown3" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Exclusive Packages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                  <li><a class="dropdown-item" href="#">International Packages under <span
+                        class="badge bg-success">30K</span></a></li>
+                  <li><a class="dropdown-item" href="#"> International Packages under <span
+                        class="badge bg-success">40K</span></a></li>
+                  <li><a class="dropdown-item" href="#">International Packages under <span
+                        class="badge bg-success">50K</span></a></li>
+                  <li><a class="dropdown-item" href="#">International Packages under <span
+                        class="badge bg-success">50K</span></a></li>
+                  <li><a class="dropdown-item" href="#">International Packages under <span
+                        class="badge bg-success">75K</span></a></li>
+                  <li><a class="dropdown-item" href="#">International Packages under <span
+                        class="badge bg-success">3lakhs</span></a></li>
+                  <li><a class="dropdown-item" href="#">International Honeymoon under <span
+                        class="badge bg-success">50K</span></a></li>
+                  <li><a class="dropdown-item" href="#">International Honeymoon under <span
+                        class="badge bg-success">1lakh</span></a></li>
+
+                </ul>
+
+              </li>
+            </ul>
+            <button class="btn btn-outline-success fw-bold" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Login</button>
+          </div>
+        </div>
+      </nav>
+      <!-- login modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content first-modal">
+            <div class="modal-header">
+              <div class="modal-body">
+                <button type="button" class="btn-close btn-outline-danger d-flex align-items-end"
+                  data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- login form -->
+                <div class="log-main row justify-content-center">
+                  <input type="checkbox" id="chk" aria-hidden="true">
+                  <!-- login -->
+                  <div class="col-md-12 login d-flex justify-content-center">
+                    <form class="text-center">
+                      <label class="log-heading mb-5" for="chk" aria-hidden="true">Login</label>
+                      <div class="form-floating mb-5">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                          style="opacity: .5;">
+                        <label for="floatingInput">Email address</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control mb-5" id="floatingPassword" placeholder="Password"
+                          style="opacity: .5;">
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-success ps-5 pe-5" style="opacity: .8;">Login</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- signip -->
+                  <div class="col-md-12 signup d-flex justify-content-center">
+                    <form class="text-center">
+                      <label for="chk" class="log-heading sig-heading mb-5 mt-5" aria-hidden="true">Signup</label>
+
+                      <div class="form-floating">
+                        <input type="email" class="form-control mb-3 " id="floatingInput1" placeholder="name@example.com"
+                          style="opacity: .9;">
+                        <label for="floatingInput1">Email address</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control mb-3" id="floatingPassword1" placeholder="Password"
+                          style="opacity: .9;">
+                        <label for="floatingPassword1">Password</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control mb-3" id="floatingPassword2" placeholder="Password"
+                          style="opacity: .9;">
+                        <label for="floatingPassword2">Confirm Password</label>
+                      </div>
+                      <div>
+                        <button type="button" class="btn btn-success ps-5 pe-5" style="opacity: .8;">Signup</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="mt-5 mb-1 fw-medium  text-center text-white aboutus">ABOUT US</h3>
+            <h1 class="fw-semibold display-1  text-center text-white welcome">Welcome to <span>'wayfind'</span></h1>
+            <p class="mt-2 mb-2  text-center  fw-bold welcome-p">"Welcome to your gateway to adventure! Here,
+              you'll find inspiration, tips, and guides to make your travel dreams a reality. Whether you're seeking
+              relaxation or excitement, we're here to help you discover the world's most breathtaking destinations.
+              Start your journey with us today!"
+            </p>
+          </div>
+          <div class="row mb-5 mt-5 ms-1">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 customize p-3">
+              <div class="row d-flex justify-content-center align-items-center text-center text-md-left">
+                <div class="col-12 col-md-7 mb-3 mb-md-0">
+                  <h5>Customize Your Trip According to your preference</h5>
+                </div>
+                <div class="col-12 col-md-3">
+                  <button type="button" class="btn p-3" data-bs-toggle="modal"
+                    data-bs-target="#custometrip">Customize</button>
+
+                  <div class="modal fade" id="custometrip" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content second-modal">
+                        <div class="modal-header">
+                          <div class="modal-body">
+                            <button type="button" class="btn-close btn-outline-danger d-flex align-items-end"
+                              data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h2 class="mb-4">Custom Trip Preparation</h2>
+                            <form>
+                              <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name"
+                                  required>
+                              </div>
+                              <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                  required>
+                              </div>
+                              <div class="form-group">
+                                <label for="destination">Destination:</label>
+                                <input type="text" class="form-control" id="destination"
+                                  placeholder="Enter your destination" required>
+                              </div>
+                              <div class="form row">
+                                <div class="form-group col-6">
+                                  <label for="adults">Number of Adults:</label>
+                                  <input type="number" class="form-control" id="adults" min="1" required>
+                                </div>
+                                <div class="form-group col-6">
+                                  <label for="children">Number of Children:</label>
+                                  <input type="number" class="form-control" id="children" min="0" required>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="budget">Budget:</label>
+                                <select class="form-control" id="budget" required>
+                                  <option value="">Select Budget Range</option>
+                                  <option value="low">Low</option>
+                                  <option value="medium">Medium</option>
+                                  <option value="high">High</option>
+                                </select>
+                              </div>
+                              <div class="form row">
+                                <div class="form-group col-6">
+                                  <label for="departure-date">Departure Date:</label>
+                                  <input type="date" class="form-control" id="departure-date" required>
+                                </div>
+                                <div class="form-group col-6">
+                                  <label for="return-date">Return Date:</label>
+                                  <input type="date" class="form-control" id="return-date" required>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="special-requirements">Special Requirements:</label>
+                                <textarea class="form-control" id="special-requirements" rows="3"
+                                  placeholder="Enter any special requirements"></textarea>
+                              </div>
+                              <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- sticky button -->
+  <section class="stickyButton">
+    <div class="floating-btn-container">
+      <div class="floating-btn d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-plus"></i>
+      </div>
+      <div class="floating-btn-menu">
+        <button type="button" class="btn btn-outline-success px-4 p-2 "
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Help</button>
+          <button class="btn btn-outline-success px-4 p-2 "><i class="fa-solid fa-phone"></i></button>
+          <button class="btn btn-outline-success px-4 p-2 "><i class="fa-brands fa-whatsapp"></i></button>
+      </div>
+    </div>
+    
+</section>
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel">May I Help You</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <dl>
+      <dt>How to customize your plan?</dt>
+      <dd>- Click on the 'customize' button in the 'customize your package' section. Then fill out the form, and we will contact you with a customized plan.</dd>
+      <br>
+      <dt>What is the maximum number of travelers?</dt>
+      <dd>- There is no limit for maximum travelers.</dd>
+      <br>
+      <dt>What about your payment methods?</dt>
+      <dd>- You can pay through cards, net banking, and EMI. Also available.</dd>
+      <br>
+      <dt>What about the refund policy?</dt>
+      <dd>- You can easily cancel your trip before 2 days, and we will refund the amount you paid</dd>
+    </dl>
+  </div>
+</div>
+
+  <!-- company info -->
+   <section class="companyInfo">
+        <div class="container">
+          <div class="row mt-5 d-flex align-items-center justify-content-center text-center">
+            <div class="col-md-6 p-5">
+                <h1 class="line">An adventure travel company<br> you can trust </h1>
+                <img src="./Img/under_line-removebg-preview.png" alt="" width="80%" height="160px">
+                <p class="info">There's a reason why 98% of customers say they'd book an adventure with us again.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="./Img/adventure-removebg-preview.png" alt="" width="70%" height="160px">
+                    <h4>Unforgettable experiences</h4>
+                    <p class="info-details">From big wows to hidden gems, our tours leave you feeling that you've really explored.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="./Img/hiking-png-removebg-preview.png" alt="" width="100%" height="160px">
+                    <h4>Expert tour leaders</h4>
+                    <p class="info-details">Chosen for their great knowledge of your destination and a passion to make your trip extraordinary.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="./Img/grp-removebg-preview (1).png" alt="" width="80%" height="160px">
+                    <h4>Small groups</h4>
+                    <p class="info-details">Average groups of 11; solos, couples and friends, united by a desire for authentic experiences.</p>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="./Img/responsible-removebg-preview.png" alt="" width="65%" height="160px">
+                    <h4>Responsible at heart</h4>
+                    <p class="info-details">How we operate sets us apart; our flexible booking policy, our loyalty scheme & sustainable approach.</p>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+
+        </div>
+   </section>
+
+   <!-- trekking -->
+
+   <section class="trekking mt-2 mb-5">
+      <div class="container">
+       <div class="text-center mb-3">
+          <h1 class="trek-head ">Test your endurance on the world's best treks</h1>
+          <img src="./Img/under_line-removebg-preview.png" alt="" width="70%" height="130px">
+       </div>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              
+              <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="row trek">
+                        <div class="col-md-6">
+                            <img src="./Img/Inca Trail.jpg" alt="" class="rounded" width="100%">
+                        </div>
+                        <div class="col-md-6">
+                            <h1>Inca Trail, Peru</h1>
+                            <h4>Best hike for modern-day explorers</h4>
+                            <p>The 20-mile (33km) trail to Machu Picchu, used for centuries, gained fame when Hiram Bingham 'discovered' it in 1911. Today, it's crowded with backpackers, but the breathtaking views of high cloud forests and the majestic Inca citadel make the journey worth every step.</p>
+                            <p><i class="fa-solid fa-arrow-right me-2" style="color:rgb(232, 110, 110);"></i>Distance: 20 miles (33km) round trip</p>
+                            <p><i class="fa-solid fa-arrow-right me-2" style="color: rgb(232, 110, 110);;"></i>Duration: 4-5 days</p>
+                            <p><i class="fa-solid fa-arrow-right me-2" style="color: rgb(232, 110, 110);;"></i>Level: moderate</p>
+                            <div class="d-flex justify-content-center mb-1">
+                                <a href="" class="btn btn-sm btn-primary px-3" style="border-radius: 30px 0 0 30px; background-color: rgb(16, 151, 247);">Read More</a>
+                                <a href="" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              
+              <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="row trek">
+                        <div class="col-md-6">
+                            <img src="./Img/Kilimanjaro.jpg" alt="" class="rounded" width="100%">
+                        </div>
+                        <div class="col-md-6">
+                            <h1>Kilimanjaro, Tanzania</h1>
+                            <h4>Best trek for: snow in the tropics</h4>
+                            <p>The week-long ascent of Africa's highest mountain, Kilimanjaro, is a favorite among fundraisers and East Africa visitors. Its misty peak rises above dusty plains, with lions and elephants at the base. The snow-capped summit, at 19,340 feet (5,895m), poses altitude sickness risks, making it an epic undertaking.</p>
+                            <p><i class="fa-solid fa-arrow-right me-2" style="color:rgb(232, 110, 110);"></i>Distance: 11 miles (18km) each way</p>
+                            <p><i class="fa-solid fa-arrow-right me-2" style="color: rgb(232, 110, 110);;"></i>Duration:2 days</p>
+                            <p><i class="fa-solid fa-arrow-right me-2" style="color: rgb(232, 110, 110);;"></i>Level: moderate</p>
+                            <div class="d-flex justify-content-center mb-1">
+                                <a href="" class="btn btn-sm btn-primary px-3" style="border-radius: 30px 0 0 30px; background-color: rgb(16, 151, 247);">Read More</a>
+                                <a href="" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            </div>
+            <div class="carousel-item">
+              
+              <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="row trek">
+                        <div class="col-md-6">
+                            <img src="./Img/evarest base camp.jpg" alt="" class="rounded" width="100%">
+                        </div>
+                        <div class="col-md-6">
+                            <h1>Everest Base Camp, Nepal</h1>
+                            <h4>Best trek for: would-be mountaineers</h4>
+                            <p>The Everest Base Camp trek is a 2-week adventure reaching 5,545m, offering stunning views of the 8,849m Sagarmatha (Mt Everest). The route winds through river valleys, the Khumbu glacier, mountain monasteries, and Sherpa villages, demanding significant endurance and muscle strength due to challenging altitude gains and gruelling daily hikes.</p>
+                            <p><i class="fa-solid fa-arrow-right me-2" style="color:rgb(232, 110, 110);"></i>Distance: 80 miles (130km) round trip</p>
+                            <p><i class="fa-solid fa-arrow-right me-2" style="color: rgb(232, 110, 110);;"></i>Duration: 2 weeks</p>
+                            <p><i class="fa-solid fa-arrow-right me-2" style="color: rgb(232, 110, 110);;"></i>Level: moderate</p>
+                            <div class="d-flex justify-content-center mb-1">
+                                <a href="" class="btn btn-sm btn-primary px-3" style="border-radius: 30px 0 0 30px; background-color: rgb(16, 151, 247);">Read More</a>
+                                <a href="" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-success" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-success" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+   </section>
+
+   <!-- service -->
+   <section class="service">
+    <h1 class="text-center pt-3">Reason People Love Us </h1>
+    <h3 class="text-center mb-5">Why Choose Us</h3>
+    <div class="d-flex align-items-center justify-content-center">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-md-3 m-2">
+                <div class="row border shadow rounded ser" >
+                    <div class="col-md-5">
+                        <img src="./Img/booking_last-removebg-preview.png" alt="" width="100%">
+                    </div>
+                    <div class="col-md-7">
+                      <h4>Fast Booking</h4>
+                      <small>Fast Booking offers quick, user-friendly reservations for flights, hotels, and car rentals, ensuring seamless travel planning.
+                      </small>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3 m-2">
+                <div class="row border shadow rounded ser">
+                    <div class="col-md-5">
+                        <img src="./Img/money-removebg-preview.png" alt="" width="100%">
+                    </div>
+                    <div class="col-md-7">
+                      <h4>Value for money</h4>
+                      <small>Getting the best combination of quality, features, and price, ensuring maximum benefit for your expenditure.
+                      </small>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3 m-2">
+                <div class="row border shadow rounded ser">
+                    <div class="col-md-5">
+                        <img src="./Img/team_work-removebg-preview.png" alt="" width="100%">
+                    </div>
+                    <div class="col-md-7">
+                      <h4>Team work</h4>
+                      <small>Together, we create unforgettable journeys. Our teamwork makes your travel plans seamless and stress-free.
+                      </small>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <!-- Destination -->
+<section class="destination pt-3 pb-3">
+  <div class="container">
+    <div class="text-center">
+      <h1 class="text-center px-3">Destination</h1>
+      <img src="./Img/under_line-removebg-preview.png" alt="" width="30%" height="60px">
+      <h4 class="text-center mt-1">Popular Destination</h4>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-lg-7 col-md-6">
+        <div class="row g-3">
+
+          <div class="col-md-12">
+            <a href="" class="d-block position-relative overflow-hidden"><img src="./Img/Thailand.jpg" alt="" class="rounded" width="100%" height="300px">
+              <div class="bg-white text-danger rounded fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
+
+              <div class="bg-white text-danger rounded fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Thailand</div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="" class="d-block position-relative overflow-hidden"><img src="./Img/nepal.jpeg" alt="" class="rounded" width="100%" height="200px">
+              <div class="bg-white rounded text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">25% OFF</div>
+
+              <div class="bg-white rounded text-danger fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Nepal</div>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="" class="d-block position-relative overflow-hidden"><img src="./Img/basic1.jpg" alt="" class="rounded" width="100%" height="200px">
+              <div class="bg-white rounded text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
+
+              <div class="bg-white rounded text-danger fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Maldives</div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-md-6" style="min-height: 350px;">
+        <a href="" class="d-block position-relative h-100 overflow-hidden">
+          <img src="./Img/bangkok.jpg" alt="" class="img-fluid position-absolute w-100 h-100 rounded" style="object-fit: cover;">
+          <div class="bg-white text-danger rounded fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">20% OFF</div>
+          <div class="bg-white rounded text-danger fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Bangkok</div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- package section -->
+<section class="package" id="packages">
+  
+  <div class="container pt-2 pb-2 ">
+      <div class="text-center">
+        <h1 class="text-center px-2">Packages</h1>
+        <img src="./Img/under_line-removebg-preview.png" alt="" width="20%" height="60px">
+        <h4 class="mb-2">Awesome Packages</h4>
+      </div>
+      <div class="row g-4 justify-content-center">
+  
+        <div class="col-md-4" style="width: 330px;">
+          <div class="package-item">
+            <div class="overflow-hidden">
+              <img src="./Img/Bali.jpg" alt="" class="img-fluid w-100">
+            </div>
+            <div class="d-flex border-bottom">
+              <h6 class="flex-fill text-center border-end py-1">
+                <i class="fa fa-map-marker-alt tect-primary me-1"></i>Bali
+              </h6>
+              <h6 class="flex-fill text-center border-end py-1">
+                <i class="fa fa-calendar-alt tect-primary me-1"></i>3 Days
+              </h6>
+              <h6 class="flex-fill text-center border-end py-1">
+                <i class="fa fa-user tect-primary me-1"></i>2 Person
+              </h6>
+            </div>
+  
+            <div class="text-center p-1">
+              <h5 class="mb-1 mt-1">Rs.15999/-</h5>
+              <div class="mb-1">
+                <small class="fa fa-star " style="color: red;"></small>
+                <small class="fa fa-star " style="color: red;"></small>
+                <small class="fa fa-star " style="color: red;"></small>
+                <small class="fa fa-star " style="color: red;"></small>
+                <small class="fa fa-star " style="color: red;"></small>
+              </div>
+              <p>Beautiful beaches, vibrant culture, lush landscapes, iconic temples, exotic paradise.</p>
+              <div class="d-flex justify-content-center mb-3">
+                <a href="" class="btn btn-sm btn-primary px-3" style="border-radius: 30px 0 0 30px;">Read More</a>
+                <a href="" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4" style="width: 330px;">
+          <div class="package-item">
+            <div class="overflow-hidden">
+              <img src="./Img/vietnam.jpg" alt="" class="img-fluid w-100">
+            </div>
+            <div class="d-flex border-bottom">
+              <h6 class="flex-fill text-center border-end py-1">
+                <i class="fa fa-map-marker-alt tect-primary me-1"></i>Vietnam
+              </h6>
+              <h6 class="flex-fill text-center border-end py-1">
+                <i class="fa fa-calendar-alt tect-primary me-1"></i>5 Days
+              </h6>
+              <h6 class="flex-fill text-center border-end py-1">
+                <i class="fa fa-user tect-primary me-1"></i>2 Person
+              </h6>
+            </div>
+  
+            <div class="text-center p-1">
+              <h5 class="mb-1">Rs.19999/-</h5>
+              <div class="mb-1">
+                <small class="fa fa-star " style="color: red;"></small>
+                <small class="fa fa-star " style="color: red;"></small>
+                <small class="fa fa-star " style="color: red;"></small>
+                <small class="fa fa-star " style="color: red;"></small>
+                <small class="fa fa-star " style="color: red;"></small>
+              </div>
+              <p> Stunning landscapes, rich history, vibrant cities, delicious cuisine, beautiful beaches.</p>
+              <div class="d-flex justify-content-center mb-3">
+                <a href="" class="btn btn-sm btn-primary px-3" style="border-radius: 30px 0 0 30px;">Read More</a>
+                <a href="" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Book Now</a>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4" style="width: 330px;">
+          <div class="package-item">
+            <div class="overflow-hidden">
+              <img src="./Img/maldives.png" alt="" class="img-fluid w-100">
+            </div>
+            <div class="d-flex border-bottom">
+              <h6 class="flex-fill text-center border-end py-1">
+                <i class="fa fa-map-marker-alt tect-primary me-1"></i>Maldives
+              </h6>
+              <h6 class="flex-fill text-center border-end py-1">
+                <i class="fa fa-calendar-alt tect-primary me-1"></i>4 Days
+              </h6>
+              <h6 class="flex-fill text-center border-end py-1">
+                <i class="fa fa-user tect-primary me-1"></i>2 Person
+              </h6>
+            </div>
+  
+            <div class="text-center p-1">
+              <h5 class="mb-1">Rs.14999/-</h5>
+              <div class="mb-1">
+                <small class="fa fa-star " style="color: red;"></small>
+                <small class="fa fa-star " style="color: red;"></small>
+                <small class="fa fa-star " style="color: red;"></small>
+                <small class="fa fa-star " style="color: red;"></small>
+                <small class="fa fa-star " style="color: red;"></small>
+              </div>
+              <p>Pristine beaches, clear waters, luxury resorts, vibrant marine life, serene paradise.</p>
+              <div class="d-flex justify-content-center mb-3">
+                <a href="" class="btn btn-sm btn-primary px-3" style="border-radius: 30px 0 0 30px;">Read More</a>
+                <a href="" class="btn btn-sm btn-primary px-3 " style="border-radius: 0 30px 30px 0;">Book Now</a>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</section>
+
+  <!-- review -->
+
+  <section class="review-main pt-3 pb-3">
+    <div class="container">
+        <div class="review" id="review">
+         <div class="text-center">
+            <h1 class="px-3">Customer Review</h1>
+            <img src="./Img/under_line-removebg-preview.png" alt="" width="25%" height="70px">
+            <h4 class="mb-3 text-center">our premium customers</h4>
+         </div>
+          <div class="row d-flex align-items-center justify-content-center mt-5 review-box">
+              <div class="col-xs-12 col-md-6 col-lg-3 m-3 review-card">
+                  <div class="review-profile">
+                      <img src="./img/review1.jpg" alt="">
+                  </div>
+                  <div class="review-text">
+                      <h2 class="name">Alice & William</h2>
+      
+                      <div class="review-icon">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star-half-stroke"></i>
+                      </div>
+      
+                      <div class="review-social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-facebook-f"></i>
+                          <i class="fa-brands fa-twitter"></i>
+                      </div>
+                      <p>"Peaceful retreat! Serene locations, exceptional service, comfortable accommodations. Perfect for older couples seeking relaxation."</p>
+                  </div>
+              </div>
+      
+              <div class="col-xs-12 col-md-6 col-lg-3 m-3  review-card">
+                  <div class="review-profile">
+                      <img src="./img/review2.jpg" alt="">
+                  </div>
+                  <div class="review-text">
+                      <h2 class="name">Jone & Jenny</h2>
+      
+                      <div class="review-icon">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star-half-stroke"></i>
+                      </div>
+      
+                      <div class="review-social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-facebook-f"></i>
+                          <i class="fa-brands fa-twitter"></i>
+                      </div>
+                      <p>"Unforgettable honeymoon! Stunning views, romantic settings, exceptional service, and perfect privacy. Highly recommended for newlyweds!"</p>
+                  </div>
+              </div>
+      
+              <div class="col-xs-12 col-md-6 col-lg-3 m-3  review-card">
+                  <div class="review-profile">
+                      <img src="./img/rewiew3.jpg" alt="">
+                  </div>
+                  <div class="review-text">
+                      <h2 class="name">Rose & Jack</h2>
+      
+                      <div class="review-icon">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-regular fa-star-half-stroke"></i>
+                      </div>
+      
+                      <div class="review-social">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-facebook-f"></i>
+                          <i class="fa-brands fa-twitter"></i>
+                      </div>
+                      <p>"Fantastic experience! Beautiful destinations, excellent service, memorable moments. Highly recommend for couples!"</p>
+                  </div>
+              </div>
+      
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+   <footer class="d-flex justify-content-center align-items-center flex-column mt-5">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social_icon d-flex justify-content-center align-items-center mt-2 mb-2">
+      <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+    </ul>
+
+    <ul class="menu d-flex justify-content-center align-items-center mt-2 mb-2">
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Service</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+    <p class="text-center">Shijil k | All Right Reserved</p>
+   </footer>
+
+</body>
+
+</html>
